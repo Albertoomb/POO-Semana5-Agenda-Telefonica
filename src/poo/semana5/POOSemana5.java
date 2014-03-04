@@ -1,6 +1,7 @@
 package poo.semana5;
 
 import poo.semana5.phonenumbers.collections.ArrayListPhoneBook;
+import poo.semana5.phonenumbers.collections.DoubleHashMapPhoneBook;
 import poo.semana5.phonenumbers.collections.HashMapPhoneBook;
 import poo.semana5.phonenumbers.collections.PhoneBook;
 
@@ -26,6 +27,15 @@ public class POOSemana5
         System.out.println(phoneBook.getName(969999991));
 
         phoneBook = new ArrayListPhoneBook();
+        phoneBook.addEntry("Qualquer Coisa", 969999999);
+        phoneBook.addEntry("Qualquer Coisa 2", 969999991);
+        phoneBook.addEntry("Qualquer Coisa 2", 969999993);
+
+        System.out.println(phoneBook.getNumber("Qualquer Coisa"));
+        System.out.println(phoneBook.getNumber("Qualquer Coisa 2"));
+        System.out.println(phoneBook.getName(969999991));
+
+        phoneBook = new DoubleHashMapPhoneBook();
         phoneBook.addEntry("Qualquer Coisa", 969999999);
         phoneBook.addEntry("Qualquer Coisa 2", 969999991);
         phoneBook.addEntry("Qualquer Coisa 2", 969999993);

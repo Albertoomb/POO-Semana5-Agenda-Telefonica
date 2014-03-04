@@ -10,7 +10,7 @@ import java.util.Map;
  */
 public class HashMapPhoneBook implements PhoneBook {
 
-    private final Map<String, Integer> phoneBook = new HashMap();
+    private final Map<String, Integer> phoneBook = new HashMap<>();
 
     @Override
     public void addEntry(String name, int number)
