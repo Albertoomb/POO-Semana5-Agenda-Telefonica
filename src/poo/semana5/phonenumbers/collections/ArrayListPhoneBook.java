@@ -11,7 +11,7 @@ import poo.semana5.phonenumbers.PhoneNumber;
  */
 public class ArrayListPhoneBook implements PhoneBook {
 
-    private final ArrayList<PhoneNumber> phoneBook = new ArrayList();
+    private final ArrayList<PhoneNumber> phoneBook = new ArrayList<>();
 
     @Override
     public void addEntry(String name, int number)
