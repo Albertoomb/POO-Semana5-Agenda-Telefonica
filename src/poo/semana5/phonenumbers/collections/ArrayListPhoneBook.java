@@ -13,10 +13,20 @@ public class ArrayListPhoneBook implements PhoneBook {
 
     private final ArrayList<PhoneNumber> phoneBook = new ArrayList<>();
 
+    public ArrayList<PhoneNumber> getPhoneBook()
+    {
+        return phoneBook;
+    }
+
     @Override
     public void addEntry(String name, int number)
     {
         phoneBook.add(new PhoneNumber(number, name));
+    }
+
+    public void addEntry(PhoneNumber phoneNumber)
+    {
+        phoneBook.add(phoneNumber);
     }
 
     /**
