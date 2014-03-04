@@ -19,13 +19,20 @@ public class POOSemana5
         PhoneBook phoneBook = new HashMapPhoneBook();
         phoneBook.addEntry("Qualquer Coisa", 969999999);
         phoneBook.addEntry("Qualquer Coisa 2", 969999991);
+        phoneBook.addEntry("Qualquer Coisa 2", 969999996);
 
         System.out.println(phoneBook.getNumber("Qualquer Coisa"));
+        System.out.println(phoneBook.getNumber("Qualquer Coisa 2"));
         System.out.println(phoneBook.getName(969999991));
 
         phoneBook = new ArrayListPhoneBook();
         phoneBook.addEntry("Qualquer Coisa", 969999999);
         phoneBook.addEntry("Qualquer Coisa 2", 969999991);
+        phoneBook.addEntry("Qualquer Coisa 2", 969999993);
+
+        System.out.println(phoneBook.getNumber("Qualquer Coisa"));
+        System.out.println(phoneBook.getNumber("Qualquer Coisa 2"));
+        System.out.println(phoneBook.getName(969999991));
     }
 
 }
