@@ -1,0 +1,18 @@
+Semana 5 de POO
+
+Introdução às colecções de Java.
+
+Exercício:
+
+Crie duas implementações diferentes de uma agenda telefónica que consiga ligar nomes a números (e.g. "Mr. Smith" --> 910123456) e números a nomes   (e.g. 910123456 --> "Mr. Smith"). Ambas as classes devem implementar o interface PhoneBook:
+public interface PhoneBook {
+ public void addEntry(final String name, int number);
+ public String getName(int number);
+ public int getNumber(final String name);
+ public void remove(final String name);
+ public boolean contains(int number);
+ public String toString();
+}
+ambas as classes deve passar no teste abaixo:
+PhoneBookTest.java
+Uma das classes deve ser implementada à custa de um ArrayList a outra à custa de dois HashMap.
